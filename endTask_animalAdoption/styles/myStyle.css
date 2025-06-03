@@ -427,7 +427,6 @@ footer ul li a:hover{
     height: 1000px;
     width: 1440px;
     z-index: 1;
-
 }
 
 .cat-hero-text {
@@ -672,7 +671,7 @@ input[type="checkbox"] {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center 85%;
-    height: 800px;
+    height: 900px;
     width: 1440px;
     
 }
@@ -780,18 +779,17 @@ input[type="checkbox"] {
     color: #333;
     margin-bottom: 10px;
 }
-/* site map */
+/* מפת אתר */
 .site-map {
     position: relative;
-    top:200px;
+    top:80px;
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 10px;
+    gap: 5px;
 }
 
 .site-map-column {
-    background-color: #f3f3f3;
+    background-color: #faf2f8;
     padding: 15px 10px;
     border-radius: 10px;
     min-width: 200px;
@@ -800,7 +798,6 @@ input[type="checkbox"] {
 }
 
 .site-map-column h3 {
-    font-size: 40px;
     margin-bottom: 20px;
     color: #333;
 }
@@ -812,7 +809,21 @@ input[type="checkbox"] {
 }
 
 .site-map-column ul li {
-    font-size: 32px;
+    font-size: 26px;
     margin-bottom: 40px;
     color: #000;
+}
+.site-map-column ul li a {
+    text-decoration: none;
+    color: #894009;
+    font-weight: normal;
+}
+.site-map-column ul li a:hover {
+  font-weight: bold;
+}
+.notActive{
+    cursor:not-allowed;
+}
+#gradient-back{
+    padding-top: 150px;
 }
