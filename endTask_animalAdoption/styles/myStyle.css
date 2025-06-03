@@ -1,0 +1,818 @@
+﻿body {
+    direction: rtl;
+    text-align: right;
+    font-family: 'Fredoka Condensed', 'Assistant', sans-serif;
+}
+
+#container {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+nav {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    opacity: 80%;
+    width: 100%
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul {
+    text-align: right;
+    padding-right: 20px;
+}
+
+.main {
+    display: inline-block;
+    position: relative;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding-right: 50px;
+    font-size: 35px;
+    text-align: center;
+}
+
+.main > a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    display: block;
+}
+
+.main ul {
+    position: absolute;
+    right: 60%; /* ממקם את ה־ul ב־60% מהימין של ההורה */
+    transform: translateX(50%); /* מחזיר חצי מהרוחב שלו כדי למרכז */
+    z-index: 1001;
+    display: none;
+    background-color: white;
+    min-width: 150px;
+    margin-right: 0;
+    padding: 10px;
+    top: 100%;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.main:hover ul {
+    display: block;
+
+}
+
+.main ul li {
+    display: block;
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+}
+
+.main ul li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.main ul li a:hover {
+    color: coral;
+}
+
+#logo-link {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+
+#logo-link:hover {
+    opacity: 0.8;
+}
+
+#logo {
+    height: 100px;
+    width: 100px;
+    vertical-align: middle;
+    cursor: pointer;
+
+}
+/* תפריט פירורי לחם */
+.breadcrumbs {
+    position:relative;
+    padding: 15px 20px; 
+    top: 150px; 
+    right: 60px; 
+    z-index: 10; 
+    width: auto; 
+    
+}
+
+.breadcrumbs ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.breadcrumbs li {
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+.breadcrumbs li a {
+    text-decoration:  underline;
+    color: white;
+}
+
+.breadcrumbs li a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+.breadcrumbs li:not(:last-child)::after {
+    content: '>';
+    margin: 0 8px;
+    color: GrayText;
+    font-size: 14px;
+}
+
+.breadcrumbs li:last-child {
+    font-weight: bold;
+    color: purple; /* וודא שהצבע הזה בולט על רקע ההירו */
+    text-decoration: underline;
+}
+.hero img {
+    position: relative;
+    height: 800px;
+    width: 100%;
+}
+
+.hero-text {
+    position: absolute;
+    top:40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    text-align: center;
+    font-size: 95px;
+    color: white;
+}
+
+h2 {
+    font-weight: lighter;
+    text-align: center;
+    font-size: 65px;
+    color: white;
+}
+
+h3 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.hero-text h2 {
+    padding-top: 40px;
+}
+
+.buttons-hero a {
+    border-radius: 25px;
+    height: 20px;
+    width: 60px;
+    border: 1px solid white;
+    text-align: center;
+    color: white;
+    padding: 10px 25px;
+    font-size: 30px;
+    text-decoration: none;
+    position: relative;
+    right: 130px;
+    top: 30px;
+}
+
+.buttons-hero a:hover {
+    background-color: white;
+    color: coral;
+    border: 3px solid coral;
+}
+
+.section-info h2 {
+    padding-top: 40px;
+    color: black;
+}
+.info-cards-container {
+    display: flex; 
+    justify-content: center; 
+    gap: 30px; 
+    flex-wrap: wrap; 
+    padding: 20px; 
+}
+.loveText p,
+.lifeText p,
+.healthText p {
+    font-size: 20px;
+}
+
+#backLove,
+#backLife,
+#backHealth {
+    position: relative; 
+    height: 200px;
+    width: 400px; 
+    background-color: pink; 
+    cursor: pointer;
+    opacity: 0.8; 
+    border-radius: 15px;
+    margin: 0; 
+}
+
+#backLife {
+    background-color: lightcyan;
+}
+
+#backHealth {
+    background-color: lightyellow;
+}
+
+
+.imageLove,
+.imageLife,
+.imageHealth {
+    position: absolute;
+    top: 0; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    height: 120px;
+    width: 120px;
+    z-index: 10;
+}
+
+.imageLove img,
+.imageLife img,
+.imageHealth img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 120px;
+    width: 120px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#loveFilled,
+#homeblue,
+#plusRed {
+    opacity: 0;
+}
+
+#backLove:hover #loveFilled,
+#backLife:hover #homeblue,
+#backHealth:hover #plusRed {
+    opacity: 1;
+}
+
+#backLove:hover #loveWhite,
+#backLife:hover #homeWhite,
+#backHealth:hover #plusWhite {
+    opacity: 0;
+}
+
+.loveText,
+.lifeText,
+.healthText {
+    position: absolute;
+    top: 120px; 
+    left: 0;
+    width: 100%; 
+    text-align: center;
+    z-index: 1;
+    padding: 0 15px; 
+    box-sizing: border-box; 
+}
+
+.process-section {
+    background-color: #f9fafb;
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.process-title {
+    font-size: 65px;
+    color: #333;
+    margin-bottom: 60px;
+}
+
+.steps-container {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+.steps-container::before {
+    content: '';
+    position: absolute;
+    right:1px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #e91e63;
+    z-index: 0;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    text-align: right;
+    position: relative;
+}
+
+.step-number {
+    background: linear-gradient(135deg, #eb9aa6, #e91e63);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 20px;
+    flex-shrink: 0;
+    z-index: 1;
+}
+
+.step-content {
+    flex: 1;
+}
+
+.step-title {
+    font-size: 35px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.step-description {
+    font-size: 24px;
+    color: #666;
+    line-height: 1.4;
+}
+
+.cta-section {
+    background: linear-gradient(135deg, #e91e63, #ff9800);
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+
+}
+
+.cta-title {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.cta-description {
+    font-size: 35px;
+    font-weight: lighter;
+    margin-bottom: 40px;
+}
+.buttons-hero .buttons-cta {
+    position: relative;
+    left: 10%;
+
+}
+footer {
+    background-color: lightgray;
+    width: 100%;
+    height: 100px;
+}
+footer ul {
+    display: flex;
+    justify-content: center; 
+    gap: 30px; /* רווח בין כל קישור */
+   
+}
+
+footer ul li {
+    margin-top: 40px;
+}
+
+footer ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+}
+footer ul li a:hover{
+    color: black;
+    font-weight: bold;
+}
+
+/*פה מתחיל דף חתולים*/
+.cats-hero img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 85%;
+    height: 1000px;
+    width: 1440px;
+    z-index: 1;
+
+}
+
+.cat-hero-text {
+    z-index: 2;
+    position: absolute;
+    top: 35%;
+    right: 7%;
+    text-align: right;
+    transform: translateY(-50%);
+}
+
+.gallery h2 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.gallery {
+    background-color: #f9fafb;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.gallery-inner {
+    max-width: 1200px;
+    width: 100%;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#byline {
+    text-align: right;
+    font-weight: normal;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.card h3 {
+    margin: 12px 0 6px;
+    color: #222;
+}
+
+.card p {
+    font-size: 1.5em;
+    color: #555;
+    min-height: 50px;
+}
+
+.card button {
+    margin-top: 10px;
+    font-size: 1.8rem;
+    background-color: #eb9aa6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: 'Fredoka Condensed', 'Assistant', sans-serif;
+    font-weight: normal;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.card button:hover {
+    background-color: white;
+    color: #eb9aa6;
+    border: 3px solid #eb9aa6;
+}
+
+.tags {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.tag {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 1em;
+    font-weight: lighter;
+    color: white;
+}
+
+.tag.gender {
+    background-color: #98552d
+}
+
+.tag.age {
+    background-color: #da9842
+}
+
+.updates {
+    background-color: #eb9aa6;
+    color: white;
+    height: 300px;
+    text-align: center;
+    position: relative;
+    padding: 60px 40px 20px;
+}
+
+#description {
+    color: white;
+    padding-bottom: 40px;
+    font-weight: normal;
+}
+
+.update-button {
+    background: white;
+    color: #eb9aa6;
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 30px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.update-button:hover {
+    background-color: #eb9aa6;
+    color: white;
+    border: 3px solid white;
+}
+
+/*פה מתחיל דף צור קשר*/
+#contactBack {
+    background-image: url('../images/contactBack.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 85%;
+    height: 1000px;
+    width: 1440px;
+}
+
+#contactAdoptionHero {
+    padding-top: 125px;
+}
+
+form {
+    margin: 30px 220px 0 0;
+    border: 3px solid white;
+    background-color: rgba(255, 255, 255, 0.9); /* שקיפות בלי להשתמש ב-opacity שמוריד גם טקסט */
+    border-radius: 25px;
+    width: 1000px;
+    padding: 30px 50px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* רווח בין השדות */
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 12px;
+    border: 1.5px solid #ccc;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+#sendForm {
+    background-color: #4CAF50; /* ירוק בולט */
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 14px 0;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 200px;
+    margin: 0;
+    transition: background-color 0.3s ease;
+}
+
+#sendForm:hover {
+    background-color: #45a049;
+}
+
+/* עיצוב כל הקבוצות  (label + input או textarea) */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.radio-group, .checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+/* דף מדריך לאימוץ כלבים */
+.dogs-hero{
+    background-image: url('../images/dogAdoptionHero.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 85%;
+    height: 800px;
+    width: 1440px;
+    
+}
+.prep-title{
+    color:black;
+    padding-top: 25px;
+}
+.prep-box {
+    margin-top: 40px;
+    background-color: #faf2f8;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.3s ease;
+}
+
+.prep-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.prep-heading{
+    font-size: 32px;
+    color: #ec4899;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.prep-text ,.aboutUs-info {
+    font-size: 26px;
+    color: black;
+}
+
+/* דף אודות */
+.aboutUs-info > h2{
+    color:black;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    text-align: right;
+}
+.aboutUs-info p {
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+.aboutUs-info > ul {
+    list-style: circle;
+    padding-bottom: 10px;
+}
+.aboutUs-info > ul >li {
+    padding-bottom: 10px;
+}
+.logo-container{
+    position: relative;
+    right: 550px;
+}
+.external-link{
+    position: relative;
+    right: 650px;
+}
+.team-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.team-section > h2 {
+    color: black;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px; 
+}
+
+.team-member {
+    
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.member-image {
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.member-name {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+/* site map */
+.site-map {
+    position: relative;
+    top:200px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.site-map-column {
+    background-color: #f3f3f3;
+    padding: 15px 10px;
+    border-radius: 10px;
+    min-width: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.site-map-column h3 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.site-map-column ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.site-map-column ul li {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #000;
+}
