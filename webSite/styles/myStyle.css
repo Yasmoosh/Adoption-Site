@@ -544,8 +544,8 @@ footer ul li a:hover{
 .cat-hero-text {
     z-index: 2;
     position: absolute;
-    top: 15%;
-    right: 30%;
+    top: 150px;
+    right: 600px;
     text-align: center;
     
 }
