@@ -151,14 +151,13 @@ nav ul {
     text-decoration: underline;
 }
 .hero img {
-    position: relative;
     height: 800px;
     width: 100%;
 }
 
 .hero-text {
     position: absolute;
-    top:40%;
+    top:45%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -420,14 +419,6 @@ footer ul li a:hover{
 }
 
 /*פה מתחיל דף חתולים*/
-.cats-hero img{
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center 85%;
-    height: 1000px;
-    width: 1440px;
-    z-index: 1;
-}
 
 .cat-hero-text {
     z-index: 2;
@@ -666,14 +657,17 @@ input[type="checkbox"] {
     gap: 6px;
 }
 /* דף מדריך לאימוץ כלבים */
-.dogs-hero{
+.dogs-hero {
     background-image: url('../images/dogAdoptionHero.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center 85%;
     height: 900px;
     width: 1440px;
-    
+}
+ #contactAdoptionHero{
+     margin-top: 20px;
+     
 }
 .prep-title{
     color:black;
@@ -749,7 +743,6 @@ input[type="checkbox"] {
 }
 
 .team-member {
-    
     padding: 20px;
     text-align: center;
     max-width: 300px;
