@@ -157,7 +157,7 @@ nav ul {
 
 .hero-text {
     position: absolute;
-    top:45%;
+    top:30%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -545,7 +545,7 @@ footer ul li a:hover{
     z-index: 2;
     position: absolute;
     top: 25%;
-    right: 17%;
+    right: 20%;
     text-align: right;
     transform: translateY(-50%);
 }
