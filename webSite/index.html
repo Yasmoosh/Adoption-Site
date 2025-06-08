@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="utf-8"/>
+    <title> מיאומץ </title>
+    <meta name="description" content="בואו אלינו לאמץ חיית מחמד שמחכה לאהבה שלכם"/>
+    <meta name="keywords" content="אימוץ,כלב,חתול,הצלת חיים,התנדבות, בחירת חבר"/>
+    <meta name="author" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css"
+          integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+    <link href="styles/reset.css" rel="stylesheet"/>
+    <link href="styles/myStyle.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=FredokaCondensed&display=swap" rel="stylesheet">
+
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <link rel="icon" href="./images/לוגו.png">
+
+</head>
+<body>
+<div id="container">
+    <nav aria-label="תפריט ראשי">
+        <ul>
+            <li class="main">
+                <a href="index.html" id="logo-link" aria-label="דף הבית">
+                    <img id="logo" src="images/לוגו.png" alt="לוגו"/>
+                </a>
+            </li>
+            <li class="main">
+                <a href="#" aria-label="אימוץ"> אימוץ </a>
+                <ul>
+                    <li><a href="adoption_process.html" aria-label="נהלי אימוץ"> נהלי אימוץ</a></li>
+                    <li><a href="dog_adoption.html" aria-label="מדריך למאמץ כלב"> מדריך למאמץ כלב</a></li>
+                    <li><a href="#" aria-label="מדריך למאמץ חתול"> מדריך למאמץ חתול</a></li>
+                </ul>
+            </li>
+            <li class="main">
+                <a href="#" aria-label="הכירו אותם"> הכירו אותם </a>
+                <ul>
+                    <li><a href="#" aria-label="כלבים"> כלבים</a></li>
+                    <li><a href="cats.html" aria-label="חתולים"> חתולים</a></li>
+                </ul>
+            </li>
+            <li class="main">
+                <a href="#" aria-label="מידע חשוב"> מידע חשוב </a>
+                <ul>
+                    <li><a href="#" aria-label="עיקור וסירוס"> עיקור וסירוס</a></li>
+                    <li><a href="#" aria-label="כללי זהירות"> כללי זהירות</a></li>
+                    <li><a href="#" aria-label="חיסונים"> חיסונים</a></li>
+                    <li><a href="#" aria-label="אילוף"> אילוף</a></li>
+                </ul>
+            </li>
+            <li class="main">
+                <a href="#" aria-label="התנדבות"> התנדבות </a>
+                <ul>
+                    <li><a href="#" aria-label="מידע למעוניינים"> מידע למעוניינים</a></li>
+                    <li><a href="contactUs.html" aria-label="צור קשר"> צור קשר</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <header class="hero">
+        <img src="images/heroBackground.jpg"/>
+        <div class="hero-text">
+            <h1>הם לא רק חיות,<br>הם חברים לחיים</h1>
+            <h2>מצאו את החבר החדש שלכם!</h2>
+            <br>
+            <div class="buttons-hero">
+                <a href="#">אימוץ כלב</a>
+                <a href="cats.html">אימוץ חתול</a>
+            </div>
+        </div>
+    </header>
+    <section class="section-info">
+        <h2>למה לאמץ חיית מחמד?</h2>
+        <div class="info-cards-container">
+        <div id="backLove">
+            <div class="imageLove">
+                <img id="loveWhite" src="images/loveWhite.png" alt="לב"/>
+                <img id="loveFilled" src="images/loveFilled.png" alt="לב"/>
+            </div>
+            <div class="loveText">
+                <h3>אהבה ללא תנאי</h3>
+                <p>חיות מחמד מעניקות אהבה ללא תנאי ונאמנות שלא ניתן למצוא במקום אחר. הם תמיד ישמחו לראות אתכם.</p>
+            </div>
+        </div>
+
+        <div id="backLife">
+            <div class="imageLife">
+                <img id="homeWhite" src="images/homeWhite.png" alt="בית"/>
+                <img id="homeblue" src="images/homwBlue.png" alt="בית"/>
+            </div>
+            <div class="lifeText">
+                <h3>הצלת חיים</h3>
+                <p>בכל אימוץ אתם מצילים חיים. אלפי חיות מחכות לבית חם ואוהב, ואתם יכולים להיות ההבדל עבורם.</p>
+            </div>
+        </div>
+
+        <div id="backHealth">
+            <div class="imageHealth">
+                <img id="plusWhite" src="images/plusWhite.png" alt=" פלוס לבן"/>
+                <img id="plusRed" src="images/plusRed.png" alt="פלוס אדום"/>
+            </div>
+            <div class="healthText">
+                <h3>בריאות נפשית</h3>
+                <p>מחקרים מראים כי בעלי חיות מחמד נוטים להיות פחות מדוכאים ולחוות פחות חרדה. הם מקור לשמחה ורוגע.</p>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="process-section">
+        <h2 class="process-title">איך תהליך האימוץ עובד?</h2>
+
+        <div class="steps-container">
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3 class="step-title">בחירת חיית מחמד</h3>
+                    <p class="step-description">עיינו ברשימת החיות הזמינות לאימוץ באתר שלנו ומצאו את החיה המתאימה לכם
+                        ולאורח החיים שלכם.</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3 class="step-title">מילוי טופס בקשה</h3>
+                    <p class="step-description">
+                        מלאו את <a href="#">טופס הבקשה</a> לאימוץ שלנו.
+                        טופס זה עוזר לנו להבין את ההתאמה שלכם לחיה הספציפית.
+                    </p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3 class="step-title">פגישה והכרות</h3>
+                    <p class="step-description">נתאם פגישה להכרות עם החיה במקום האחזקה שלה. זו הזדמנות לבדוק אם יש
+                        "קליק" ביניכם.</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h3 class="step-title">האימוץ</h3>
+                    <p class="step-description">לאחר אישור הבקשה, תחתמו על חוזה האימוץ ותוכלו לקחת את חיית המחמד החדשה
+                        הביתה!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <h2 class="cta-title">מוכנים למצוא את החבר החדש שלכם?</h2>
+        <p class="cta-description">אלפי חיות מחכות לאימוץ ולאהבה שלכם. לא תמצאו חבר נאמן יותר.</p>
+
+        <div class="buttons-hero">
+            <div class="buttons-cta">
+                <a href="#">אימוץ כלב</a>
+                <a href="cats.html">אימוץ חתול</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <ul>
+            <li><a href="about.html">אודות</a></li>
+            <li><a href="siteMap.html">מפת אתר</a></li>
+        </ul>
+        <div class="footer-content">
+            <div class="footer-section contact-info">
+                <h3>דברו איתנו:</h3>
+                <p>077-888-9999</p>
+                <p>רחוב הכלב הנאמן 52, תל אביב-יפו</p>
+                <p>בניין ידידי הפרווה (קומה 2), מיקוד 6543210</p>
+                <p>מייל: <a href="mailto:adopt@ourpaws.org.il">adopt@ourpaws.org.il</a></p>
+            </div>
+
+            <div class="footer-section social-icons">
+                <a href="#" aria-label="פייסבוק"><img src="images/facebook-logo.png" height="500" width="500"
+                    class="social-icon"></a>
+                <a href="#" aria-label="אינסטגרם"><img src="images/instaLogo.png" height="384" width="384"
+                    class="social-icon"></a>
+                <a href="#" aria-label="יוטיוב"><img src="images/youtube.png" height="500" width="500"
+                    class="social-icon"></a>
+            </div>
+
+            <div class="footer-section about-text">
+                <p>אנו פועלים למען אימוץ חיות מחמד ומציאת בית חם לכלבים וחתולים נטושים. הצטרפו אלינו והעניקו להם חיים חדשים תקווה ואהבה.</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="copyright">
+                <p>מיאומץ, 2025 &copy;</p>
+            </div>
+            <div class="footer-links">
+                <a href="#" class="notActive">מדיניות פרטיות</a> |
+                <a href="#" class="notActive">תנאי שימוש</a> |
+                <a href="#" class="notActive">הצהרת נגישות</a>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
