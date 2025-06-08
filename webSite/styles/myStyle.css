@@ -546,8 +546,8 @@ footer ul li a:hover{
     position: absolute;
     top: 25%;
     right: 45%;
-    text-align: right;
-    transform: translateY(-50%);
+    text-align: center;
+    
 }
 #galleryWhole{
     margin-top: 50px;
